@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.TestGiraffe.API", "FSharp.TestGiraffe.API\FSharp.TestGiraffe.API.fsproj", "{DFCB2503-185A-40AF-84D6-A4B12C539837}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFCB2503-185A-40AF-84D6-A4B12C539837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCB2503-185A-40AF-84D6-A4B12C539837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCB2503-185A-40AF-84D6-A4B12C539837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCB2503-185A-40AF-84D6-A4B12C539837}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE0C20F2-F88C-4E05-8486-A39A983CF02F}
+	EndGlobalSection
+EndGlobal
