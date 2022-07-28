@@ -22,19 +22,12 @@ let errorHander (ex: Exception) (logger: ILogger) =
     logger.LogError(EventId(), ex, "An unhandled exception has occurred while executing the request.")
     clearResponse >=> setStatusCode 500 >=> text ex.Message
  
-let exitCode = 0
+let args = Environment.GetCommandLineArgs()
+let builder = WebApplication.CreateBuilder(args)
+builder.Services.AddGiraffe() |> ignore
 
-[<EntryPoint>]
-let main args =
+let app = builder.Build()
+app.UseGiraffe(webApp)
+app.Run()
 
-    let builder = WebApplication.CreateBuilder(args)
-
-    builder.Services.AddGiraffe() |> ignore
-
-    let app = builder.Build()
-
-    app.UseGiraffe(webApp)
-
-    app.Run()
-
-    exitCode
+exit 0
